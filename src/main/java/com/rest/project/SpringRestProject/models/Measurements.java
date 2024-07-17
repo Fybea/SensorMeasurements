@@ -5,12 +5,18 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.Cascade;
 
 import java.time.LocalDateTime;
 
 @Table(name = "measurements")
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 public class Measurements {
 
     @Id
@@ -35,54 +41,4 @@ public class Measurements {
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
-
-    public Measurements(int temperature, boolean raining) {
-        this.temperature = temperature;
-        this.raining = raining;
-    }
-
-    public Measurements() {
-    }
-
-    public int getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(int temperature) {
-        this.temperature = temperature;
-    }
-
-    public boolean isRaining() {
-        return raining;
-    }
-
-    public void setRaining(boolean raining) {
-        this.raining = raining;
-    }
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
-    public Sensor getSensor() {
-        return sensor;
-    }
-
-    public void setSensor(Sensor sensor) {
-        this.sensor = sensor;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
 }
