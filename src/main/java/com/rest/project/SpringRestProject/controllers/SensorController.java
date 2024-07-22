@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/sensors")
+@RequestMapping("/api/v1/sensors")
 public class SensorController {
 
     private final SensorService sensorService;
