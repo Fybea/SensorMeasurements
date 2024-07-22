@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/measurements")
+@RequestMapping("/api/v1/measurements")
 public class MeasurementsController {
 
     private final MeasurementsService measurementsService;
@@ -54,6 +54,10 @@ public class MeasurementsController {
 
     private MeasurementsDTO convertToMeasurementsDTO(Measurements measurements) {
         return modelMapper.map(measurements, MeasurementsDTO.class);
+    }
+
+    private Measurements convertToMeasurementsDTO(MeasurementsDTO measurementsDTO) {
+        return modelMapper.map(measurementsDTO, Measurements.class);
     }
 
 }
