@@ -55,9 +55,4 @@ public class MeasurementsController {
     private MeasurementsDTO convertToMeasurementsDTO(Measurements measurements) {
         return modelMapper.map(measurements, MeasurementsDTO.class);
     }
-
-    private Measurements convertToMeasurementsDTO(MeasurementsDTO measurementsDTO) {
-        return modelMapper.map(measurementsDTO, Measurements.class);
-    }
-
 }
