@@ -1,14 +1,14 @@
 package com.rest.project.SpringRestProject.services;
 
+import com.rest.project.SpringRestProject.exceptions.NotCreatedException;
+import com.rest.project.SpringRestProject.exceptions.NotFoundException;
 import com.rest.project.SpringRestProject.models.Sensor;
 import com.rest.project.SpringRestProject.repositories.SensorRepository;
-import com.rest.project.SpringRestProject.util.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Transactional(readOnly = true)
@@ -26,18 +26,18 @@ public class SensorService {
         return sensorRepository.findAll();
     }
 
-
-    public Optional<Sensor> findOne(String name) {
-        return sensorRepository.findByName(name);
-    }
-
     public Sensor findOne(int id) {
-        Optional<Sensor> foundSensor = sensorRepository.findById(id);
-        return foundSensor.orElseThrow(NotFoundException::new);
+        return sensorRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("Sensor with id: " + id + " - not found"));
     }
 
     @Transactional
     public void save(Sensor sensor) {
+
+        if (sensorRepository.findByName(sensor.getName()).isPresent()) {
+            throw new NotCreatedException("Sensor with this name: " + sensor.getName() + " - already exists");
+        }
+
         sensorRepository.save(sensor);
     }
 }
