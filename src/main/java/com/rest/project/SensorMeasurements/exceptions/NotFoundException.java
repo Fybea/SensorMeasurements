@@ -1,4 +1,4 @@
-package com.rest.project.SpringRestProject.exceptions;
+package com.rest.project.SensorMeasurements.exceptions;
 
 public class NotFoundException extends RuntimeException {
     public NotFoundException(String message) {

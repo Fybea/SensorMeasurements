@@ -1,4 +1,4 @@
-package com.rest.project.SpringRestProject.models;
+package com.rest.project.SensorMeasurements.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;

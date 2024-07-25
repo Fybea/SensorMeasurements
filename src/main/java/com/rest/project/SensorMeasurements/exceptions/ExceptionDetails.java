@@ -1,4 +1,4 @@
-package com.rest.project.SpringRestProject.exceptions;
+package com.rest.project.SensorMeasurements.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

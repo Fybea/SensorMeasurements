@@ -1,4 +1,4 @@
-package com.rest.project.SpringRestProject;
+package com.rest.project.SensorMeasurements;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

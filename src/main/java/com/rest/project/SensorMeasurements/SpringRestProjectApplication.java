@@ -1,6 +1,6 @@
-package com.rest.project.SpringRestProject;
+package com.rest.project.SensorMeasurements;
 
-import com.rest.project.SpringRestProject.exceptions.ExceptionHandlerController;
+import com.rest.project.SensorMeasurements.exceptions.ExceptionHandlerController;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

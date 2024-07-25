@@ -1,8 +1,8 @@
-package com.rest.project.SpringRestProject.controllers;
+package com.rest.project.SensorMeasurements.controllers;
 
 
-import com.rest.project.SpringRestProject.dto.SensorDTO;
-import com.rest.project.SpringRestProject.services.SensorService;
+import com.rest.project.SensorMeasurements.dto.SensorDTO;
+import com.rest.project.SensorMeasurements.services.SensorService;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,12 +47,12 @@ public class SensorController {
     }
 
 
-    private com.rest.project.SpringRestProject.models.Sensor convertToSensor(SensorDTO sensorDTO) {
-        return modelMapper.map(sensorDTO, com.rest.project.SpringRestProject.models.Sensor.class);
+    private com.rest.project.SensorMeasurements.models.Sensor convertToSensor(SensorDTO sensorDTO) {
+        return modelMapper.map(sensorDTO, com.rest.project.SensorMeasurements.models.Sensor.class);
     }
 
 
-    private SensorDTO convertToSensorDTO(com.rest.project.SpringRestProject.models.Sensor sensor) {
+    private SensorDTO convertToSensorDTO(com.rest.project.SensorMeasurements.models.Sensor sensor) {
         return modelMapper.map(sensor, SensorDTO.class);
     }
 }

@@ -1,8 +1,8 @@
-package com.rest.project.SpringRestProject.controllers;
+package com.rest.project.SensorMeasurements.controllers;
 
-import com.rest.project.SpringRestProject.dto.MeasurementsDTO;
-import com.rest.project.SpringRestProject.models.Measurements;
-import com.rest.project.SpringRestProject.services.MeasurementsService;
+import com.rest.project.SensorMeasurements.dto.MeasurementsDTO;
+import com.rest.project.SensorMeasurements.models.Measurements;
+import com.rest.project.SensorMeasurements.services.MeasurementsService;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

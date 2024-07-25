@@ -1,4 +1,4 @@
-package com.rest.project.SpringRestProject.models;
+package com.rest.project.SensorMeasurements.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

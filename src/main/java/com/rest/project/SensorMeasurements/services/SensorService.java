@@ -1,9 +1,9 @@
-package com.rest.project.SpringRestProject.services;
+package com.rest.project.SensorMeasurements.services;
 
-import com.rest.project.SpringRestProject.exceptions.NotCreatedException;
-import com.rest.project.SpringRestProject.exceptions.NotFoundException;
-import com.rest.project.SpringRestProject.models.Sensor;
-import com.rest.project.SpringRestProject.repositories.SensorRepository;
+import com.rest.project.SensorMeasurements.exceptions.NotCreatedException;
+import com.rest.project.SensorMeasurements.exceptions.NotFoundException;
+import com.rest.project.SensorMeasurements.models.Sensor;
+import com.rest.project.SensorMeasurements.repositories.SensorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,7 +1,7 @@
-package com.rest.project.SpringRestProject.repositories;
+package com.rest.project.SensorMeasurements.repositories;
 
 
-import com.rest.project.SpringRestProject.models.Measurements;
+import com.rest.project.SensorMeasurements.models.Measurements;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

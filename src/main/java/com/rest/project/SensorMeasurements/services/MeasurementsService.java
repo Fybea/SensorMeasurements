@@ -1,11 +1,11 @@
-package com.rest.project.SpringRestProject.services;
+package com.rest.project.SensorMeasurements.services;
 
-import com.rest.project.SpringRestProject.dto.MeasurementsDTO;
-import com.rest.project.SpringRestProject.exceptions.NotCreatedException;
-import com.rest.project.SpringRestProject.exceptions.NotFoundException;
-import com.rest.project.SpringRestProject.models.Measurements;
-import com.rest.project.SpringRestProject.repositories.MeasurementsRepository;
-import com.rest.project.SpringRestProject.repositories.SensorRepository;
+import com.rest.project.SensorMeasurements.dto.MeasurementsDTO;
+import com.rest.project.SensorMeasurements.exceptions.NotCreatedException;
+import com.rest.project.SensorMeasurements.exceptions.NotFoundException;
+import com.rest.project.SensorMeasurements.models.Measurements;
+import com.rest.project.SensorMeasurements.repositories.MeasurementsRepository;
+import com.rest.project.SensorMeasurements.repositories.SensorRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

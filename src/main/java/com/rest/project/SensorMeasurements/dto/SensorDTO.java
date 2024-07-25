@@ -1,4 +1,4 @@
-package com.rest.project.SpringRestProject.dto;
+package com.rest.project.SensorMeasurements.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
